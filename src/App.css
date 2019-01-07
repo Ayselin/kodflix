@@ -5,3 +5,13 @@
 img {
   width: 20%;
 }
+
+.container {
+  display: flex;
+  margin: 30px;
+}
+
+.titles {
+  flex: 1;
+  
+}
