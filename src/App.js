@@ -16,12 +16,15 @@ class App extends Component {
         <br /><br /><br />
         <div className='container'>
           <div className='titles'><img src={blindspot} alt='Favorite TV Show cover' /></div>
-          <div className='titles'><img src={doctorwho} alt='Favorite TV Show cover' /></div>
+          <div class='overlay'> 
+            <h1>Blind Spot</h1>
+            </div>
+          <div className='titles'><img src={scorpion} alt='Favorite TV Show cover' /></div>
           <div className='titles' ><img src={chb} alt='Favorite TV Show cover' /></div>
         </div>
         <div className='container'>
           <div className='titles'><img src={friendless} alt='Favorite TV Show cover' /></div>
-          <div className='titles'><img src={scorpion} alt='Favorite TV Show cover' /></div>
+          <div className='titles'><img src={doctorwho} alt='Favorite TV Show cover' /></div>
           <div className='titles'><img src={solve} alt='Favorite TV Show cover' /></div>
         </div>
       </div>
