@@ -10,6 +10,8 @@
 .titles {
   flex: 1;  
   padding: 20px; 
+  border: 1px solid green;
+  position: relative;
 }
 
 img {
@@ -17,10 +19,17 @@ img {
 }
 
 .overlay {
+  position: absolute;
   display: none;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+
+
 }
 
-.item:hover .overlay{
+.titles:hover .overlay {
   display: block;
 }
 
