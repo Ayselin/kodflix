@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Tvshow from './Tvshow';
+import TvShow from './TvShow';
 import blindspot from './images/blindspot.jpg';
 import doctorwho from './images/doctorwho.jpg';
 import blackandwhite from './images/chb.jpg';
@@ -16,14 +16,14 @@ class App extends Component {
 
         <br /><br /><br />
         <div className='container'>
-          <Tvshow name='Blind Spot' logo={blindspot} />
-          <Tvshow name='Scorpion' logo={scorpion} />
-          <Tvshow name='Black and White' logo={blackandwhite} />
+          <TvShow name='Blind Spot' logo={blindspot} />
+          <TvShow name='Scorpion' logo={scorpion} />
+          <TvShow name='Black and White' logo={blackandwhite} />
         </div>
         <div className='container'>
-          <Tvshow name='The friendless five' logo={friendless} />
-          <Tvshow name='Doctor Who' logo={doctorwho} />
-          <Tvshow name='Solve' logo={solve} />
+          <TvShow name='The friendless five' logo={friendless} />
+          <TvShow name='Doctor Who' logo={doctorwho} />
+          <TvShow name='Solve' logo={solve} />
         </div>
       </div>
     );

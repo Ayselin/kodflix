@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Tvshow(props) {
+export default function TvShow(props) {
   return (
     <div className='titles'>
       <img src={props.logo} alt={`${props.name} logo`} />
