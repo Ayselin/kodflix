@@ -6,6 +6,7 @@ import blackandwhite from './images/chb.jpg';
 import friendless from './images/friendless.jpg';
 import scorpion from './images/scorpion.jpg';
 import solve from './images/solve.jpg';
+
 export default function Gallery() {
     return (
       <div>
