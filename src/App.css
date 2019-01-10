@@ -23,16 +23,11 @@ img {
 .overlay {
   transition: bottom ease 1s;
   position: absolute;
-  /*display: none;*/
   bottom: -100px;
   left: 0;
   width: 100%;
   background-color: white;
- /* transition: width 2s, height 4s;*/
 }
-
-/*.overlay:hover {
-  width: 300px;*/
 
 
 .titles:hover .overlay {
