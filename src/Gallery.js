@@ -13,12 +13,12 @@ export default function Gallery() {
     <div className='container'>
             <TvShow name='Blind Spot' logo={blindspot} />
             <TvShow name='Scorpion' logo={scorpion} />
-            <TvShow name='Black and White' logo={blackandwhite} />
+            <TvShow name='Solve' logo={solve} />
           </div>
           <div className='container'>
-            <TvShow name='The friendless five' logo={friendless} />
+            <TvShow name='The Friendless Five' logo={friendless} />
             <TvShow name='Doctor Who' logo={doctorwho} />
-            <TvShow name='Solve' logo={solve} />
+            <TvShow name='Black & White' logo={blackandwhite} />
           </div>
         </div>
     )
