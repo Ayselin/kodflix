@@ -8,6 +8,6 @@ export default function TvShow(props) {
       <div className='overlay'>
         <h1>{props.name}</h1>
       </div>
-      </Link>
+    </Link>
   );
 }
