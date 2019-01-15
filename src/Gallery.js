@@ -14,12 +14,10 @@ export default function Gallery() {
             <TvShow id='blind' name='Blind Spot' logo={blindspot} />
             <TvShow id='scorpion' name='Scorpion' logo={scorpion} />
             <TvShow id='solve' name='Solve' logo={solve} />
-          </div>
-          <div className='container'>
             <TvShow id='friendless' name='The Friendless Five' logo={friendless} />
             <TvShow id='doctorwho' name='Doctor Who' logo={doctorwho} />
             <TvShow id='blackandwhite' name='Black & White' logo={blackandwhite} />
-          </div>
+            </div>
         </div>
     )
   }
