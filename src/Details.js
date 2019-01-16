@@ -13,7 +13,7 @@ export default class Details extends React.Component {
   componentDidMount() {
      setTimeout(() => {
         this.setState({
-          welcomeMessage:'The best is yet to come!'
+          welcomeMessage:'The best is yet to come!!!!'
         });     
      },3000);
   }
