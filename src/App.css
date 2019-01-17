@@ -1,24 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
-  
+  background-color: bisque
 }
 
 .container {
   display: grid;
  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
- 
 }
 
 .titles {
   padding: 20px; 
   position: relative;
   overflow: hidden;
-  
 }
 
 img {
   width: 100%;
- 
 }
 
 a {
@@ -41,5 +42,4 @@ a:active {
 .titles:hover .overlay {
   display: block;
   bottom: 0;
-
 }
