@@ -4,10 +4,11 @@
 
 .App {
   text-align: center;
+  background-color: blanchedalmond;
 }
 
 .container {
-  display: grid;
+ display: grid;
  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
@@ -33,9 +34,9 @@ a:active {
   transition: bottom ease 1s;
   position: absolute;
   bottom: -100px;
-  left: 0;
-  width: 100%;
-  background-color: white;
+  left: 20px;
+  right: 20px;
+  background-color: blanchedalmond;
 }
 
 .titles:hover .overlay {
