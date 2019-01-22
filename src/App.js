@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import Gallery from './Gallery';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Details from './Details.js';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Details from './Details/Details.js';
 import './App.css';
-
+import NotExist from './NotExist.js';
 
 
 class App extends Component {
@@ -11,15 +11,16 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          <Route exact path='/' component={Gallery} />
-          <Route exact path='/:details' component={Details} />  
-          </div>
+          <Switch>
+            <Route exact path='/' component={Gallery} />
+            <Route exact path='/not-found' component={NotExist} />
+            <Route exact path='/:galleryId' component={Details} />
+          </Switch>
+        </div>
       </Router>
     );
   }
 }
-
-
 
 
 export default App;

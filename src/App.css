@@ -1,19 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
+  background-color: blanchedalmond;
 }
 
 .container {
-  display: grid;
+ display: grid;
  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  margin: 30px;
 }
 
 .titles {
   padding: 20px; 
-  border: 1px solid green;
   position: relative;
   overflow: hidden;
-  
 }
 
 img {
@@ -32,13 +34,12 @@ a:active {
   transition: bottom ease 1s;
   position: absolute;
   bottom: -100px;
-  left: 0;
-  width: 100%;
-  background-color: white;
+  left: 20px;
+  right: 20px;
+  background-color: blanchedalmond;
 }
 
 .titles:hover .overlay {
   display: block;
   bottom: 0;
-
 }
