@@ -1,6 +1,6 @@
 import React from 'react';
 import TvShow from './TvShow';
-import getGallery from './getGallery';
+import getGallery from './GetGallery-get';
 
 
 export default function Gallery() {
