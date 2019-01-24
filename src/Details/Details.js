@@ -32,8 +32,12 @@ export default class Details extends React.Component {
         <div className='Details'>
           <h1>{this.state.gallery.name}</h1>
           <div className='content'>
-            <div>{this.state.gallery.details}</div>
-            <img src={this.state.gallery.logo}
+            <div className='text'>
+              {this.state.gallery.details}
+            </div>
+            <img
+              className='image'
+              src={this.state.gallery.logo}
               alt={this.state.gallery.name} />
           </div>
           <Link to='/'>Back to home page</Link>
