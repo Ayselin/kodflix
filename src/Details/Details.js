@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, Redirect } from 'react-router-dom';
-import getGallery from '../GetGallery-get';
+import getGallery from '../Frontend/GetGallery-get';
 import './Details.css';
 
 
