@@ -35,10 +35,12 @@ export default class Details extends React.Component {
             <div className='text'>
               {this.state.gallery.details}
             </div>
+            <div className='imageContainer'>
             <img
               className='image'
               src={this.state.gallery.logo}
               alt={this.state.gallery.name} />
+            </div>
           </div>
           <Link className='link' to='/' >Back to home page</Link>
         </div>

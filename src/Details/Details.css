@@ -8,10 +8,16 @@ h1 {
    margin: 10px
 }
 
-.image {
-   margin: 10px;
-   width: 70%;
-   height: 70%;
+.Details .text {
+   flex: 2;
+}
+
+.Details .imageContainer {
+   flex: 1;
+}
+
+.Details .image {
+   width: 100%;
 }
 
 @media only screen and (max-width: 600px) {
