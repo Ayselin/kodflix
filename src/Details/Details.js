@@ -40,7 +40,7 @@ export default class Details extends React.Component {
               src={this.state.gallery.logo}
               alt={this.state.gallery.name} />
           </div>
-          <Link to='/'>Back to home page</Link>
+          <Link className='link' to='/' >Back to home page</Link>
         </div>
 
       );

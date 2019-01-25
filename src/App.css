@@ -4,8 +4,6 @@
 
 .App {
   text-align: center;
-  background-color: rgb(207, 199, 199);
-  
 }
 
 .container {
@@ -15,7 +13,7 @@
 }
 
 .titles {
-  padding: 20px; 
+  padding: 20px;
   position: relative;
   overflow: hidden;
 }
@@ -45,4 +43,9 @@ a:active {
 .titles:hover .overlay {
   display: block;
   bottom: 0;
+}
+
+.link {
+  padding-bottom: 40px;
+  display: block;
 }
