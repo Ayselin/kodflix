@@ -1,7 +1,8 @@
 const express = require('express')
 const app = express()
 const port = 3002
+const getShows = require('./listofshows');
 
-app.get('/', (req, res) => res.send('Hello World!'))
+app.get('/rest/listofshows', (req, res) => res.send(getShows()))
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
