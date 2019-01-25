@@ -1,8 +1,6 @@
 const express = require('express')
 const app = express()
-const port = 49365
-
-console.log('XX', process.env.HOST)
+const port = 3002
 
 app.get('/', (req, res) => res.send('Hello World!'))
 
