@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, Redirect } from 'react-router-dom';
-import getGallery from '../GetGallery-get';
+//import getGallery from '../GetGallery-get';
 import './Details.css';
 
 
@@ -14,20 +14,14 @@ export default class Details extends React.Component {
   }
 
   componentDidMount() {
-    let galleryId = this.props.match.params.galleryId;
-    let gallery = getGallery()
-      .find((gallery) => gallery.id === galleryId);
-    this.setState({
-      gallery: gallery
-    });
 
     fetch('/rest/shows')
-    .then(function(response) {
-      return response.json();
-    })
-    .then(function(myJson) {
-      console.log(myJson);
-    });
+      .then(function (response) {
+        return response.json();
+      })
+      .then(function (myJson) {
+        console.log(myJson);
+      });
 
   };
 
@@ -43,10 +37,10 @@ export default class Details extends React.Component {
               {this.state.gallery.details}
             </div>
             <div className='imageContainer'>
-            <img
-              className='image'
-              src={this.state.gallery.logo}
-              alt={this.state.gallery.name} />
+              <img
+                className='image'
+                src={this.state.gallery.logo}
+                alt={this.state.gallery.name} />
             </div>
           </div>
           <Link className='link' to='/' >Back to home page</Link>

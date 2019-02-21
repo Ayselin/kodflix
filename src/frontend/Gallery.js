@@ -1,22 +1,41 @@
-import React from 'react';
+import React, { Component } from 'react';
 import TvShow from './TvShow';
-import getGallery from './GetGallery-get';
+//import getGallery from './GetGallery-get';
 
 
-export default function Gallery() {
+export default class Gallery extends Component {
+  constructor() {
+    super()
+    this.state = {
+      movies: []
+    }
+
+  }
+
+  componentDidMount() {
+    fetch('/rest/shows')
+      .then(response => {
+        return response.json(TvShow);
+      })
+      .then(movies => { 
+        this.setState({ movies: movies })
+      });
+
+  }
+
+  render() {
     return (
       <div>
-    <div className='container'>
+        <div className='container'>
           {
-            getGallery().map(tvShow => (
-              <TvShow
-                key={tvShow.id}
-                id={tvShow.id} 
-                name={tvShow.name} 
-                logo={tvShow.logo}/>
+            this.state.movies.map(movie => (
+              <TvShow id={movie.id} name={movie.name} />
             ))
-          }  
+          }
+              </div>
           </div>
-        </div>
-    )
-  }
+        );
+      }
+  }  
+
+
