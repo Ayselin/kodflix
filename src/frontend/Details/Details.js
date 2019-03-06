@@ -19,33 +19,41 @@ export default class Details extends React.Component {
       .then(function (response) {
         return response.json();
       })
-      .then(function (myJson) {
-        console.log(myJson);
+      .then(galleries => {
+        let galleryId = this.props.match.params.galleryId;
+        let gallery = galleries.find(show => show.id === galleryId);
+        this.setState({
+           gallery:gallery
+        });
       });
-
   };
 
   render() {
+    let gallery = this.state.gallery;
     if (this.state.gallery === undefined) {
       return <Redirect to='/not-found' />;
-    } else {
+    } else if(this.state.gallery.id){
       return (
         <div className='Details'>
-          <h1>{this.state.gallery.name}</h1>
+          <h1>{gallery.name}</h1>
           <div className='content'>
             <div className='text'>
-              {this.state.gallery.details}
+              {gallery.details}
             </div>
             <div className='imageContainer'>
               <img
-                className='image'
-                src={this.state.gallery.logo}
+                src={require(`../images/${gallery.id}.jpg`)}
                 alt={this.state.gallery.name} />
             </div>
           </div>
           <Link className='link' to='/' >Back to home page</Link>
         </div>
-
+      );
+    } else {
+      return (
+        <div className='details'>
+        <div className='content'>Loadind...</div>
+        </div>
       );
     }
   }
